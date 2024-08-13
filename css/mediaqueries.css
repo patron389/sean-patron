@@ -1,0 +1,158 @@
+/* 1231 PX  */
+@media (max-width: 78em) {
+  .hero__section .rotate__wrapper {
+    display: none;
+  }
+  .grid__2__cols {
+    gap: 5rem;
+  }
+  .projects__section .grid.grid__2__cols {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5rem;
+  }
+  .project__title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .project__content__box {
+    height: 11rem;
+  }
+  .project__item:hover .project__content__box {
+    height: 23rem;
+  }
+}
+
+/* 1083 PX  */
+@media (max-width: 67em) {
+  html {
+    font-size: 59.5%;
+  }
+  .primary__heading {
+    font-size: 9rem;
+  }
+  .grid__2__cols {
+    grid-template-columns: 1fr;
+  }
+  .footer__section .email__wrapper .email__text {
+    font-size: 3.6rem;
+  }
+}
+
+/* 790 PX  */
+@media (max-width: 49em) {
+  html {
+    font-size: 52.5%;
+  }
+  .primary__heading {
+    font-size: 9rem;
+    letter-spacing: -5px;
+  }
+  .secondary__heading {
+    font-size: 6rem;
+  }
+  .featured__projects {
+    display: none;
+  }
+
+  .mg__top__6 {
+    margin-top: 4rem;
+  }
+  .projects__section .grid.grid__2__cols {
+    grid-template-columns: 1fr;
+  }
+  .project__item:nth-child(2) {
+    grid-column: 1;
+    /* grid-row: 1; */
+    align-self: self-start;
+  }
+  .hero__section {
+    padding-top: 25rem;
+  }
+  .about__me__section {
+    padding: 15rem 0 10rem 0;
+  }
+  .expertise__section {
+    padding: 10rem 0;
+  }
+  .my__work__my__pride__section {
+    padding: 10rem 0 0 0;
+  }
+  .projects__section {
+    padding: 10rem 0 10rem 0;
+  }
+  .footer__section {
+    padding: 10rem 0 3rem 0;
+  }
+  .footer__section .email__wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .cursor {
+    display: none;
+  }
+  .cursor-follower {
+    display: none;
+  }
+}
+
+/* 494 PX  */
+@media (max-width: 31em) {
+  html {
+    font-size: 50%;
+  }
+  .hero__section .text__content::before {
+    height: 40.3rem;
+    max-width: 40.3rem;
+    right: 50%;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .section__btns {
+    width: 100%;
+  }
+  .section__btns.flex {
+    flex-direction: column;
+  }
+  .primary__heading {
+    font-size: 6.5rem;
+    letter-spacing: -2px;
+  }
+  .secondary__heading {
+    font-size: 5rem;
+  }
+  .footer__section .rotate__wrapper {
+    display: none;
+  }
+  .footer__section .email__wrapper .email__text {
+    font-size: 3rem;
+  }
+  .footer__section .container .bottom__footer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .mg__top__3 {
+    margin-top: 2rem;
+  }
+  .hero__section {
+    padding-top: 25rem;
+  }
+  .about__me__section {
+    padding: 13rem 0 10rem 0;
+  }
+  .expertise__section {
+    padding: 10rem 0;
+  }
+  .my__work__my__pride__section {
+    display: none;
+  }
+  .projects__section {
+    padding: 10rem 0;
+  }
+}

@@ -1,0 +1,178 @@
+/* SCROLLER ANIMATION  */
+.scroller__inner li .skill__logo__box img {
+  border-radius: 10px;
+  width: 14rem;
+}
+.scroller {
+  width: 100%;
+  /* height: 90rem; */
+  /* border: 3px solid green; */
+}
+/* .circle { */
+/* --circle-size: 40px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 1px solid black;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none; */
+/* z-index: 10; */
+/* } */
+
+.scroller__inner {
+  list-style: none;
+  /* padding-block: 2rem; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 30%,
+    white 70%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 50%, white 70%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite;
+  /* animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite; */
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
+}
+/* SCROLLER ANIMATION  */
+.hero__section .rotate__wrapper {
+  position: absolute;
+  right: 5rem;
+}
+.about__me__section .rotate__wrapper {
+  position: absolute;
+  right: -10rem;
+  bottom: -9rem;
+  z-index: -1;
+  /* bottom: 5rem;
+  /* bottom: 5rem; */
+}
+.expertise__section .rotate__wrapper {
+  position: absolute;
+  top: 20%;
+  left: 5rem;
+  /* z-index: -1; */
+  /* bottom: 5rem;
+  /* bottom: 5rem; */
+}
+.rotating__circle {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+}
+
+.rotate__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateBox 20s linear infinite; /* Adjust animation duration as needed */
+}
+
+.center__star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateBox {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes onScroll1 {
+  from {
+    transform: translateY(-12rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes onScroll2 {
+  from {
+    transform: translateY(-6rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.picture__wrapper:first-child,
+.picture__wrapper:nth-child(5) {
+  animation: onScroll1 linear;
+  animation-timeline: view();
+  /* animation-range: entry 30%; */
+}
+.picture__wrapper:nth-child(2),
+.picture__wrapper:nth-child(4) {
+  animation: onScroll2 linear;
+  animation-timeline: view();
+}
+
+.tag_list {
+  list-style: none;
+}
+.scroller2 {
+  width: 100%;
+  overflow: hidden;
+}
+.scroller__inner2 {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.scroller2[data-animated="true"] {
+  overflow: hidden;
+}
+
+.scroller2[data-animated="true"] .scroller__inner2 {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll2 var(--_animation-direction, forwards) linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes scroll2 {
+  to {
+    transform: translate(calc(-50% - 1.5rem));
+  }
+}
+
+/* animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite; */
+
+.scroller2[data-direction="right"] {
+  --_animation-direction: reverse;
+}
