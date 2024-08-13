@@ -690,6 +690,7 @@ body {
 .footer__section .email__wrapper .email__text {
   position: relative;
   font-size: 5.6rem;
+  text-decoration:none;
   color: var(--white-color);
 }
 .footer__section .email__wrapper .email__text::after {
