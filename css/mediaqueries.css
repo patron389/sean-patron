@@ -104,6 +104,14 @@
   html {
     font-size: 50%;
   }
+  .main__nav .nav__lists .nav__item:link,
+  .main__nav .nav__lists .nav__item:visited {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--black-color);
+    transition: all 0.3s ease-in-out;
+  }
+
   .hero__section .text__content::before {
     height: 40.3rem;
     max-width: 40.3rem;
@@ -135,6 +143,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 8rem;
     gap: 3rem;
   }
   .mg__top__3 {
